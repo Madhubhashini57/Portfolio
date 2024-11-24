@@ -1,0 +1,1237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Bebas+Neue&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Lato:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #9494A1;
+}
+
+* {
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Scrollbar
+   ========================================================================== */
+
+/**
+ * Customized Scrollbar.
+ */
+::-webkit-scrollbar {
+    display: none;
+    width: 6px;
+    background: #3f3838;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FFCCEA;
+}
+
+/**
+ * Scroll Up Button.
+ */
+#scroll_up_btn {
+    position: fixed;
+    opacity: 40%;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #FFCCEA;
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    transition: all 0.4s;
+}
+
+#scroll_up_btn > i {
+    font-size: 19px;
+    color: #fff !important;
+    line-height: 0;
+    position: absolute;
+    right: 10px;
+    top: 17px;
+}
+
+#scroll_up_btn:hover {
+    color: #FFCCEA !important;
+    opacity: 100%;
+    transform: translateY(-10px);
+}
+
+header {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    top: 0;
+    height: 73px;
+    z-index: 999;
+}
+
+#heading1 {
+    position: relative;
+    left: 120px;
+    top: 15px;
+    text-decoration: none;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+
+    color: #000000;
+}
+
+#heading2 {
+    font-family: "Agency FB";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+
+    color: #FFCCEA;
+}
+
+.menu {
+    position: absolute;
+    right: 110px;
+    top: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    list-style: none;
+    cursor: pointer;
+    padding: 10px;
+    font-family: Bahnschrift !important;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.menu ul li a {
+    line-height: 20px;
+    text-decoration: none;
+    transition: 0.3s all;
+    color: #000000;
+}
+
+.menu ul li a:hover {
+    color: #FFCCEA;
+}
+
+.menu ul li #active {
+    color: #FFCCEA;
+}
+
+.hover-line::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 6px;
+    background-color: #FFCCEA;
+    border-radius: 26%;
+    transition: width .3s;
+}
+
+.hover-line:hover::after {
+    width: 40%;
+    transition: width .3s;
+}
+
+.active-hover-line::after {
+    content: '';
+    display: block;
+    width: 40%;
+    height: 6px;
+    background-color: #FFCCEA;
+    border-radius: 26%;
+    transition: width .3s;
+}
+
+/**
+* main section
+*/
+main {
+    position: relative;
+    margin-top: 73px;
+    width: 100%;
+}
+
+/*  home section
+   ========================================================================== */
+
+main > section:nth-child(1) {
+    position: relative;
+    background: #fff;
+    width: 100%;
+}
+
+/**
+* description section
+*/
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h3:first-child {
+    font-family: Poppins;
+    font-size: 31px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #FFCCEA;
+}
+
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(2) {
+    font-family: Poppins;
+    font-size: 55px;
+    margin-top: 16px;
+    margin-bottom: 0;
+    color: #FFCCEA;
+}
+
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(2) > span {
+    font-family: Poppins;
+    font-size: 55px;
+    color: #000000;
+}
+
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(3) {
+    font-family: Poppins ;
+    font-size: 50px;
+    color: #000000;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > h1:nth-child(3) > span {
+    font-family: Poppins;
+    font-size: 50px;
+    color: #FFCCEA;
+}
+
+.typed-cursor {
+    display: none;
+}
+
+/*
+* description section button
+*/
+
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > button:nth-child(4) {
+    position: relative;
+    width: 206px;
+    height: 68px;
+    background-color: #FFCCEA;
+    border-radius: 46px;
+    box-shadow: 28px 28px 50px rgba(13, 39, 80, 0.36);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+    text-align: left;
+    padding-left: 25px;
+    font-size: 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-width: 0;
+}
+
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > button:nth-child(4) > div {
+    position: absolute;
+    top: 5px;
+    left: 141px;
+    height: 58px;
+    width: 60px;
+    border-radius: 100%;
+    background: #F9FAFB;
+    box-shadow: inset -13px -13px 16px #FFFFFF, inset 13px 13px 16px rgba(13, 39, 80, 0.16);
+    cursor: pointer;
+}
+
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > button:nth-child(4) > div:first-child > i:first-child {
+    height: 27px;
+    width: 27px;
+    position: absolute;
+    left: 29%;
+    top: 29%;
+    bottom: 41.09%;
+    color: #FFCCEA;
+    cursor: pointer;
+}
+
+/**
+* social links section
+*/
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #909597;
+}
+
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav {
+    display: flex;
+    gap: 15px;
+}
+
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav > div {
+    width: 67px;
+    height: 67px;
+    background: rgba(236, 240, 243, 0.85);
+    box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 15px;
+}
+
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav:nth-child(2) > div > a > i {
+    position: relative;
+    left: 23%;
+    top: 23%;
+    font-size: 2.40em;
+    color: #909597;
+    cursor: pointer;
+}
+
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav:nth-child(2) > div:nth-child(1) > a > i {
+    font-size: 2.00em;
+    top: 29%;
+    left: 32%;
+}
+
+main > section:nth-child(1) > section > div:first-child > aside:nth-child(1) > section:nth-child(5) > nav > div:hover ,a > i:hover{
+    transition: all 0.5s ease;
+    -webkit-transform: scale(1.10);
+    transform: scale(1.10);
+    color: #FFCCEA !important;
+}
+
+/**
+* main image section in home section
+*/
+main > section:first-child > section > div:first-child > aside:nth-child(2) > div:first-child {
+    background: url(../img/MyPhoto.jpg);
+    width: 250px;
+    height: 300px;
+    background-size: cover;
+    position: relative;
+    bottom: 18px;
+    border-radius: 30px;
+}
+
+main > section:first-child > section:first-child {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main > section:first-child > section:first-child > div:first-child {
+    width: 1100px;
+    display: flex;
+    gap: 66px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    margin-top: 35px;
+    padding-left: 35px;
+    transition: all 2s;
+}
+
+/*  about section
+   ========================================================================== */
+
+main > section:nth-child(2) {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background:'#fff';
+}
+
+/**
+* title in about section
+*/
+main > section:nth-child(2) > section:first-child {
+    position: relative;
+    text-align: center;
+    padding-top: 68px;
+}
+
+main > section:nth-child(2) > section:first-child > h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: initial;
+    font-size: 25px;
+    color: #FFCCEA !important;
+    text-align: center;
+    padding-top: 12px;
+    margin: 0;
+}
+
+main > section:nth-child(2) > section:first-child > h1 {
+    font-family: Ubuntu, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    padding-bottom: 18px;
+}
+
+main > section:nth-child(2) > section:first-child > h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #ddd;
+    bottom: 2px;
+    left: calc(50% - 60px);
+    border-radius: 2px;
+}
+
+main > section:nth-child(2) > section:first-child > h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 6px;
+    background: #FFCCEA;
+    bottom: 0;
+    left: calc(50% - 20px);
+    border-radius: 3px;
+}
+
+/**
+* about description in about section
+*/
+main > section:nth-child(2) > section:nth-child(2) > div:first-child > aside:nth-child(2) {
+    width: 667px;
+    display: flex;
+    flex-direction: column;
+}
+
+/**
+* description title in about section
+*/
+main > section:nth-child(2) > section:nth-child(2) > div:first-child > aside:nth-child(2) > h2:first-child {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    line-height: 52px;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+/**
+* image in about section
+*/
+main > section:nth-child(2) > section:nth-child(2) > div:first-child > div:first-child > img {
+    background: url(../img/MyPhoto.jpg);
+    width: 220px;
+    height: 300px;
+    background-size: cover;
+    position: relative;
+    border-radius: 30px;
+}
+/**
+* introducing description in about section
+*/
+main > section:nth-child(2) > section:nth-child(2) > div:first-child > aside:nth-child(2) > p:nth-child(2), p:nth-child(3) {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    line-height: 24px;
+    color: #9494A1 !important;
+    margin-top: 0;
+}
+
+/**
+* my details position and introducing display type about section
+*/
+main > section:nth-child(2) > section:nth-child(2) > div:first-child > aside:nth-child(2) > div:nth-child(4) {
+    position: relative;
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/**
+* my details column 1 titles customized about section
+*/
+main > section:nth-child(2) > section:nth-child(2) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column1 > p {
+    font-family: Poppins;
+    font-size: 17px;
+    color: var(--text-black-900) !important;
+}
+
+main > section:nth-child(2) > section:nth-child(2) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column1 > p > i:first-child {
+    color: #FFCCEA;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+/**
+* my details column 1 span customized about section
+*/
+main > section:nth-child(2) > section:nth-child(2) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column1 > p > span {
+    color: var(--text-black-700) !important;
+}
+
+/**
+* my details column 2 titles customized about section
+*/
+main > section:nth-child(2) > section:nth-child(2) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 > p {
+    font-family: Poppins;
+    font-size: 17px;
+    color: var(--text-black-900) !important;
+}
+
+main > section:nth-child(2) > section:nth-child(2) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 > p > i:first-child {
+    color: #FFCCEA;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+/**
+* introduced my details column 2 position about section
+*/
+main > section:nth-child(2) > section:nth-child(2) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 {
+    position: absolute;
+    right: 0;
+}
+
+/**
+* my details column 2 span customized about section
+*/
+main > section:nth-child(2) > section:nth-child(2) > div:first-child > aside:nth-child(2) > div:nth-child(4) > #column2 > p > span {
+    color: var(--text-black-700) !important;
+}
+
+main > section:nth-child(2) > section:nth-child(2) > div:first-child > aside:nth-child(2) > div:nth-child(5) {
+    position: relative;
+    top: 16px;
+    margin-bottom: 65px;
+}
+
+/**
+* description section button position about section
+*/
+main > section:nth-child(2) > section:nth-child(2) > div:first-child > aside:nth-child(2) > div:nth-child(5) > button:first-child {
+    width: 209px;
+    height: 46px;
+    background-color: #464444;
+    box-shadow: 28px 28px 50px rgba(13, 39, 80, 0.36);
+    border-radius: 25px;
+    font-family: 'Ubuntu', SansSerif;
+    text-align: left;
+    padding-left: 25px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border-width: 0;
+}
+
+main > section:nth-child(2) > section:nth-child(2) > div:first-child > aside:nth-child(2) > div:nth-child(5) > button:first-child > div {
+    position: absolute;
+    width: 43px;
+    height: 42px;
+    left: 163px;
+    top: 2px;
+    border-radius: 100%;
+    background: #F9FAFB;
+    box-shadow: inset -13px -13px 16px #FFFFFF, inset 13px 13px 16px rgba(13, 39, 80, 0.16);
+    cursor: pointer;
+}
+
+main > section:nth-child(2) > section:nth-child(2) > div:first-child > aside:nth-child(2) > div:nth-child(5) > button:first-child > div:first-child > i:first-child {
+    height: 27px;
+    width: 27px;
+    position: absolute;
+    left: 32%;
+    top: 30%;
+    bottom: 41.09%;
+    color: #FFCCEA;
+    cursor: pointer;
+}
+
+main > section:nth-child(2) > section:nth-child(2) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+main > section:nth-child(2) > section:nth-child(2) > div:first-child {
+    width: 1100px;
+    display: flex;
+    gap: 92px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 67px;
+    margin-right: 67px;
+    transition: all 2s;
+}
+
+main > section:nth-child(2) > section:nth-child(2) > div:first-child > aside:nth-child(2) > div:nth-child(4) > div:first-child > p:nth-child(6) {
+    display: none;
+}
+
+main > section:nth-child(2) > section:nth-child(2) > div:first-child > aside:nth-child(2) > div:nth-child(4) > div:first-child > p:nth-child(7) {
+    display: none;
+}
+
+/*  services section
+   ========================================================================== */
+
+main > section:nth-child(3) {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background: #fff;;
+}
+
+/**
+* title in service section
+*/
+main > section:nth-child(3) > section:first-child {
+    position: relative;
+    text-align: center;
+    padding-top: 68px;
+}
+
+main > section:nth-child(3) > section:first-child > h4 {
+    font-family: 'Lato', sans-serif !important;
+    font-weight: initial;
+    font-size: 25px;
+    color: #FFCCEA !important;
+    text-align: center;
+    padding-top: 12px;
+    margin: 0;
+}
+
+main > section:nth-child(3) > section:first-child > h1 {
+    font-family: Ubuntu, sans-serif !important;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    padding-bottom: 18px;
+}
+
+/**
+* title underline in service section
+*/
+main > section:nth-child(3) > section:first-child > h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #ddd;
+    bottom: 2px;
+    left: calc(50% - 60px);
+    border-radius: 2px;
+}
+
+main > section:nth-child(3) > section:first-child > h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 6px;
+    background: #FFCCEA;
+    bottom: 0;
+    left: calc(50% - 20px);
+    border-radius: 3px;
+}
+
+/**
+* div tags customized service section
+*/
+main > section:nth-child(3) > section:nth-child(2) > section > div {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    background: #ECF0F3;
+    box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 25px;
+}
+
+main > section:nth-child(3) > section:nth-child(2) {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: 70px;
+    margin-right: 69px;
+    transition: all 2s;
+}
+
+/**
+* main section position and display flex service section
+*/
+main > section:nth-child(3) > section:nth-child(2) > section {
+    width: 1095px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 66px;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: all 2s;
+}
+
+/**
+* images position service section
+*/
+main > section:nth-child(3) > section:nth-child(2) > section > div > div:first-child {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    height: 50px;
+    margin: auto;
+}
+
+/**
+* added images colors and sizes service section
+*/
+main > section:nth-child(3) > section:nth-child(2) > section > div > div:first-child > i {
+    color: #FFCCEA;
+    font-size: 2.40em;
+}
+
+/**
+* added headings and positions headings service section
+*/
+main > section:nth-child(3) > section:nth-child(2) > section > div > h4:nth-child(2) {
+    position: absolute;
+    top: 84px;
+    left: 0;
+    right: 0;
+    font-family: 'Ubuntu'!important;
+    font-size: 22px;
+    text-align: center;
+    color: #000000;
+}
+
+/**
+* added descriptions service section
+*/
+main > section:nth-child(3) > section:nth-child(2) > section > div > p:nth-child(3) {
+    position: absolute;
+    width: 264px;
+    top: 155px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 17px;
+    text-align: center;
+    color: #9494A1 !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+
+
+/*//////////////////////////////////////////////////////////////*/
+main > section:nth-child(3) > section:nth-child(2) > section:first-child > div:hover {
+    transition: all 0.8s ease;
+    -webkit-transform: scale(0.97);
+    transform: scale(0.97);
+    box-shadow: 1px 1px 54px 1px rgba(0, 0, 0, 0.22);
+    cursor: pointer;
+}
+
+.slider {
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+
+.slider .slide-track {
+    animation: 50s linear infinite;
+    animation-name: slider-animation;
+    animation-direction: normal;
+    display: flex;
+    animation-delay: .5s;
+    width: calc(100px * 14);
+}
+
+.slider .slide {
+    height: 100px;
+    width: 100px;
+}
+
+@keyframes slider-animation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/*  contact section
+   ========================================================================== */
+
+main > section:nth-child(4) {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background: #fff;
+}
+
+/**
+* title in contact section
+*/
+main > section:nth-child(4) > section:first-child {
+    position: relative;
+    text-align: center;
+    padding-top: 68px;
+}
+
+main > section:nth-child(4) > section:first-child > h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: initial;
+    font-size: 25px;
+    color: #FFCCEA !important;
+    text-align: center;
+    padding-top: 12px;
+    margin: 0;
+}
+
+main > section:nth-child(4) > section:first-child > h1 {
+    font-family: Ubuntu, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    padding-bottom: 18px;
+}
+
+/**
+* title underline position and display flex type in contact section
+*/
+main > section:nth-child(4) > section:first-child > h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: #ddd;
+    bottom: 2px;
+    left: calc(50% - 60px);
+    border-radius: 2px;
+}
+
+main > section:nth-child(4) > section:first-child > h1::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 6px;
+    background: #FFCCEA;
+    bottom: 0;
+    left: calc(50% - 20px);
+    border-radius: 3px;
+}
+
+/**
+* customized titles, display type and flex-direction in contact section
+*/
+main > section:nth-child(4) > section:nth-child(2) > section:first-child {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+/**
+* customized first title
+*/
+main > section:nth-child(4) > section:nth-child(2) > section:first-child > h3:first-child {
+    font-family: 'Roboto', sans-serif;
+    font-size: 29px;
+    margin: 0px 0px 13px;
+    text-align: center;
+    color: #FFCCEA;
+}
+
+/**
+* customized second title
+*/
+main > section:nth-child(4) > section:nth-child(2) > section:first-child > h4:nth-child(2) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    color: #302E4D;
+}
+
+/**
+* contact details display flex type and justify-content center in contact section
+*/
+main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) {
+    display: flex;
+    margin-top: 90px;
+    align-items: center;
+    justify-content: center;
+}
+
+/**
+* contact details justify-content space-evenly in contact section
+*/
+main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div {
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 1004px;
+}
+
+/**
+* all contact details divs added flex-direction column and align-items center in contact section
+*/
+main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div:first-child > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/**
+* customized all contact detail sections title fonts sizes in contact section
+*/
+main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > h4:nth-child(2) {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    margin: 10px 0 0;
+}
+
+/**
+* customized all contact detail sections icons sizes and colors in contact section
+*/
+main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > i:first-child {
+    color: #FFCCEA;
+    font-size: 1.99em;
+}
+
+/**
+* customized all contact detail sections descriptions fonts sizes in contact section
+*/
+main > section:nth-child(4) > section:nth-child(2) > section:nth-child(2) > div:first-child > div > p:nth-child(3) {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+/**
+* customized send me email section titles, display type and flex-direction in contact section
+*/
+main > section:nth-child(4) > section:nth-child(2) > section:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+/**
+* Added send me email section first title
+*/
+main > section:nth-child(4) > section:nth-child(2) > section:nth-child(3) > h3:first-child {
+    font-family: 'Roboto', sans-serif;
+    font-size: 29px;
+    margin: 0px 0px 13px;
+    text-align: center;
+    color: #FFCCEA;
+}
+
+/**
+* Added send me email section second title
+*/
+main > section:nth-child(4) > section:nth-child(2) > section:nth-child(3) > h4:nth-child(2) {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    color: #302E4D;
+}
+
+/**
+* send me email section position center
+*/
+main > section:nth-child(4) > section:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+/**
+* customized name and email texts in contact section
+*/
+.contactDetails > input {
+    width: 39vw;
+    height: 44px;
+    background: #F7F8FA;
+    box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 43px;
+    border: none;
+    padding: 0 0 0 20px;
+}
+
+/**
+* customized subject text in contact section
+*/
+main > section:nth-child(4) > section:nth-child(3) > form > fieldset > div:nth-child(2) > input {
+    width: 81vw;
+    height: 44px;
+    background: #F7F8FA;
+    box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 43px;
+    border: none;
+    padding: 0 0 0 20px;
+}
+
+/**
+* customized message textarea in contact section
+*/
+main > section:nth-child(4) > section:nth-child(3) > form:first-child > fieldset > div:nth-child(3) > textarea {
+    width: 81vw;
+    height: 184px;
+    background: #F7F8FA;
+    box-shadow: -23px -23px 45px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 43px;
+    border: none;
+    padding: 20px 0 0 20px;
+}
+
+main > section:nth-child(4) > section:nth-child(3) > form > fieldset > div:nth-child(3) {
+    position: relative;
+}
+
+/**
+* added display type flex and flex-direction column send message section in contact section
+*/
+main > section:nth-child(4) > section:nth-child(3) > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/**
+* added flex-direction row and gap name and email in contact section
+*/
+main > section:nth-child(4) > section:nth-child(3) > form > fieldset > div:first-child {
+    display: flex;
+    flex-direction: row;
+    gap: 2.9vw;
+}
+
+/**
+* added button and customized it in contact section
+*/
+main > section:nth-child(4) > section:nth-child(3) > form > fieldset > div:nth-child(4) > button {
+    display: flex;
+    gap: 27px;
+    width: 185px;
+    height: 49px;
+    background: #464444;
+    box-shadow: 28px 28px 50px rgba(151, 153, 155, 0.36);
+    border-radius: 46px;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: left;
+    padding-left: 25px;
+    padding-top: 14px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+main > section:nth-child(4) > section:nth-child(3) > form > fieldset > div:nth-child(4) > button > div {
+    margin-top: -10px;
+    width: 40px;
+    height: 42px;
+    border-radius: 100%;
+    background: #F9FAFB;
+    box-shadow: inset -13px -13px 16px #FFFFFF, inset 13px 13px 16px rgba(13, 39, 80, 0.16);
+}
+
+main > section:nth-child(4) > section:nth-child(3) > form > fieldset > div:nth-child(4) > button > div > i {
+    position: relative;
+    left: 27.5%;
+    top: 27.19%;
+    color: #FFCCEA;
+}
+
+/**
+* added form flex-direction column and gap in contact section
+*/
+main > section:nth-child(4) > section:nth-child(3) > form {
+    display: inline-block;
+}
+
+main > section:nth-child(4) > section:nth-child(3) > form > fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: normal;
+    gap: 29px;
+    border: none;
+}
+
+/*  footer
+   ========================================================================== */
+
+footer {
+    position: relative;
+    width: 100%;
+    background: #ECF0F3;
+}
+
+/**
+* customized h1 in footer
+*/
+footer > section:first-child > div:first-child > h2:first-child {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/**
+* customized span in footer
+*/
+footer > section:first-child > div:first-child > h2:first-child > span {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    color: #FFCCEA;
+}
+
+/**
+* added section display type flex and justify-content center in footer section
+*/
+footer > section:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/**
+* added social media icons justify-content space-evenly in footer section
+*/
+footer > section:first-child > div:first-child > nav:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/**
+* added section display type flex and flex-direction column in footer section
+*/
+footer > section:first-child > div:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+/**
+* added section added gap and justify-content space-evenly in footer section
+*/
+footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-child {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 37px
+}
+
+/**
+* customized social media icons covers in footer
+*/
+footer > section:first-child > div:first-child > nav:nth-child(2) > div {
+    width: 50px;
+    height: 50px;
+    background: #ECF0F3;
+    box-shadow: -4px -4px 12px rgba(236, 236, 236, 0.1), 4px 4px 12px rgba(0, 0, 0, 0.16);
+    border-radius: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/**
+* added social media icons hover effects in footer
+*/
+footer > section:first-child > div:first-child > nav:nth-child(2) > div:hover {
+    transition: all 0.5s ease;
+    -webkit-transform: scale(1.10);
+    transform: scale(1.10);
+}
+
+footer > section:first-child > div:first-child > nav:nth-child(2) > div:hover > a > i:hover {
+    transition: all 0.5s ease;
+    color: #FFCCEA !important;
+}
+
+/**
+* customized social media icons and added color in footer section
+*/
+footer > section:first-child > div:first-child > nav:nth-child(2) > div > a > i {
+    font-size: 2.00em;
+    color: #909597;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+/**
+* added list color and font size in footer section
+*/
+footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-child > li {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    list-style: none;
+}
+
+footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-child > li > a {
+    line-height: 20px;
+    text-decoration: none;
+    transition: 0.3s all;
+    color: #000000;
+}
+
+/**
+* added hover menu list in footer section
+*/
+footer > section:first-child > div:first-child > nav:nth-child(3) > ul:first-child > li > a:hover {
+    color: #FFCCEA;
+    transition: 0.5s all;
+}
+
+/**
+* customized copyrights section in footer
+*/
+footer > section:nth-child(3) {
+    background: #8E959D;
+    text-align: center;
+}
+
+/**
+* added color copyrights section text in footer
+*/
+footer > section:nth-child(3) > small:first-child {
+    color: #fff;
+}
+
+footer > section:first-child > div:first-child > h2:nth-child(4) {
+    display: none;
+}
+
+footer > section:first-child > div:first-child > h2:nth-child(4) > span {
+    display: none;
+}
